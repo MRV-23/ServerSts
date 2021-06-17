@@ -17,6 +17,7 @@ class Usuarios{
     }
 
     static validarUsuario(){
+        console.log("entro validar usuario")
         var renglon=0;
         fetch("http://192.168.0.249/sts-backend/backend/api/v1/usuarios",{
             
@@ -30,6 +31,7 @@ class Usuarios{
         .then( data => {
             
             if (data.status == "success" && data.result.code == 200) {
+                console.log("status:-->"+data.status )
                 Usuarios.recursos()
                 Usuarios.totalRegistros = data.result.msg.result.total;
                 Usuarios.elementoUsiariosTotal.text(Usuarios.totalRegistros)
@@ -71,6 +73,7 @@ class Usuarios{
 
     static main(){
         Usuarios.init()
+        console.log("entro js ")
         //Usuarios.recursos()
         Usuarios.validarUsuario();
         Usuarios.usuarioInicio.on('input', function(){Usuarios.validarIngreso(this);});
@@ -78,6 +81,6 @@ class Usuarios{
 
 }
 
-$( document ).ready(function(){
+//$( document ).ready(function(){
     Usuarios.main();
-});
+//});

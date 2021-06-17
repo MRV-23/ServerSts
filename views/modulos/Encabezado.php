@@ -1,6 +1,7 @@
-<header class="main-header">
+
+  <header class="main-header">
     <!-- Logo -->
-    <a href="InterfazInicio.html" class="logo">
+    <a href="inicio" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>S</b>TS</span>
       <!-- logo for regular state and mobile devices -->
@@ -24,8 +25,8 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img  id='imagenn' src="" class="user-image imagenes" alt="User Image"> <!-- esta es la imagen del lado derecho principal-->
-              <span class="hidden-xs nombre" id="nombre"></span>
+            <img  id='imagenuno' name='imagenuno'src="" class="user-image imagenes" alt="User Image">  <!-- esta es la imagen del lado derecho principal-->
+              <span id='nombre' class="hidden-xs">Alexander Pierce</span>
             </a>
           </li>
 

@@ -43,7 +43,7 @@ class Asistencias{
                     
             }else{
                 let link=document.createElement('a');
-                link.href="http://localhost/sts";
+                link.href="http://localhost/";
                 document.body.appendChild(link);
                 link.click();
                 link.remove();
@@ -55,6 +55,7 @@ class Asistencias{
 
     }
     static recursos(){
+        console.log("entro a recursos asistencias")
         let n,y,m,d;
         document.getElementById("nombre").innerHTML =localStorage.getItem("nombreUser");
         $('#imagenuno').attr('src',localStorage.getItem("avatar"))
@@ -84,6 +85,7 @@ class Asistencias{
     
         $("#reportePersonalAsistencias").click(function(e){
             e.preventDefault();
+            console.log("entro a descargar")
             Asistencias.descargaArchivo(e)
         });
     }

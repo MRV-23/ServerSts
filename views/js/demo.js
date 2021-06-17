@@ -1,9 +1,3 @@
-/**
- * AdminLTE Demo Menu
- * ------------------
- * You should not use this file in production.
- * This file is for demo purposes only.
- */
 $(function () {
   'use strict'
 
@@ -53,8 +47,8 @@ $(function () {
       window.alert('Please use a modern browser to properly view this template!')
     }
   }
-  $( ".menucabecera" ).click(function(e){
-   // alert("click menu")
+  $( "#reportePersonalAsistencias" ).click(function(e){
+    alert("click descargar")
  
   });
   /**funcion para validar usuario */

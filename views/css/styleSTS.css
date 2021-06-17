@@ -6,7 +6,7 @@
     .backIngreso{
         position:relative;
         height:100vh;
-        background: url("img/sts1.jpg") no-repeat center fixed ; 
+        background: url("../../views/img/sts1.jpg") no-repeat center fixed ; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;

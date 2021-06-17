@@ -35,59 +35,38 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-
+  
+ 
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
   <body class="hold-transition  sidebar-mini skin-red">
   <div class="wrapper">
-    <?php
-      
-      if(isset($_GET['ruta'])){
-        include "views/modulos/Encabezado.php";
-        include "views/modulos/Menu.php";
-        if($_GET['ruta']=="inicio"||
-           $_GET['ruta']=="usuarios"||
-           $_GET['ruta']=="asistencias"){
-
-            include "views/modulos/".$_GET['ruta'].".php";
-            include "views/modulos/footer.php";
-           }else {
-            include "views/modulos/404.php";
-            include "views/modulos/footer.php";
-           }
-      }else {
-        include "views/modulos/login.php";
-      }
-      
-     // include "views/modulos/footer.php";
-      
-
-            ?>
+    
 
     <!-- empieza body-->
-    <!--<div class="backIngreso">
-      <form method="post" class="formIngreso" id="formIngreso">
+    <div class="backIngreso" style="background: url('views/img/sts1.jpg')  ">
+      <form method="" class="formIngreso" id="formIngreso">
       <br>
       <h1 class="tituloFormIngreso"><img src="views/img/mini/sts2222.jpg" alt="User Image" class="user-image"></h1>
         <div class="inputWhitIcon inputIconBg"><input class="form-control formIngreso inputEstilo" type="text" placeholder="Nombre de usuario" name="usuarioIngreso" id="usuarioIngreso" autocomplete='off' required><i class="fa fa-user"></i></div>
         <div class="inputWhitIcon inputIconBg inputIconBg2" ><input class="form-control formIngreso inputEstilo" type="password" placeholder="Contraseña" name="passwordIngreso" id="passwordIngreso" required><i class="fa fa-lock"></i><span class="fa fa-eye verPass"></span></div>
         <div id='alertainicio'></div>
-        <input class="botonSesion" id="iniciarSesion" name='iniciarSesion'type="submit" value="INICIAR"><br>
+       
+         <input  class="botonSesion" id="iniciarSesion" name='iniciarSesion'type="button" value="INICIAR"><br>
         <h1 class="lema"><i class="fa fa-map-marker"></i> <strong>SKY</strong>TRACKING</h1>
         <h4 class="derechos"> S Y S T E M </h4>
-             <h1 class="tituloFormIngreso"><img src="http://localhost/asesores/views/imagenes-usuarios/mini/asesoresCH.png" alt="User Image" class="user-image"></h1> 
+        <p id="demo"></p>
+           
         </form>
-    </div>-->
+    </div>
     </div>
     <script src="views/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="views/bower_components/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
+
 <!-- Bootstrap 3.3.7 -->
 <script src="views/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- Morris.js charts -->
@@ -115,15 +94,14 @@
 <script src="views/js/adminlte.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="views/js/pages/dashboard.js"></script>
-   <!--AdminLTE for demo purposes 
-  <script src="views/js/Login.js"></script>-->
-<script src="views/js/demo.js"></script>
-<script src="views/js/Usuarios.js"></script>
-<script src="views/js/Inicio.js"></script>
-<script src="views/js/paginador.js"></script>
-<script src="views/js/Asistencias.js"></script>
+  <!-- AdminLTE for demo purposes -->
+<script src="views/js/log.js"></script>
+
   </body>
     
     
   
 </html>
+
+
+

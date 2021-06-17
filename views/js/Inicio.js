@@ -28,12 +28,12 @@ class Inicio{
         .then(response => response.json())
         .then( data => {
 
-            if (data.status == "success" && data.status.result.code == 200) {
-                Inicio.recursos()
+            if (data.status == "success" && data.result.code == 200) {
+              //  Inicio.recursos()
            
             } else {
                 let link=document.createElement('a');
-                link.href="http://localhost/sts";
+                link.href="http://localhost/sts/pelon";
                 document.body.appendChild(link);
                 link.click();
                 link.remove();
@@ -51,10 +51,11 @@ class Inicio{
        // $('#imagenuno').attr('src', "http://192.168.0.249/sts/img/no-image.jpg")
       
         //Inicio.init()
-        //Inicio.autenticacion()
-        Inicio.recursos()
+        Inicio.autenticacion()
+        //Inicio.recursos()
        
     }
 
 }
 Inicio.main();
+console.log("entro js inico")

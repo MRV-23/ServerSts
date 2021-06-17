@@ -1,21 +1,20 @@
-
 class Login{
 
-   static init(){
+  /*  static init(){
 
         Login.usuarioInicio = $('#usuarioIngreso');
         Login.usuarioPassword = $('#passwordIngreso');
         Login.htmlUsuarios = $('#dataPermisosUser');
         Login.html = "";
-        Login.nombre=localStorage.getItem("x-api-key");
+        //Login.nombre=localStorage.getItem("x-api-key");
         Login.validar="nada";
 
     }
 
-     static validarIngreso(caja){
+    static validarIngreso(caja){
          alert("entro validar")
         caja.value = caja.value.replace(/[0-9,*+\?^{}()|[\]\\]/g,"");
-        //let x = Login.usuarioInicio.val()
+
     }
 
     static validarUsuario(){
@@ -32,8 +31,10 @@ class Login{
         .then(response => response.json())
         .then( data => {
             if (data.status =='success' && data.result.code == 200) {
+                console.log("entrooooooo")
                 let link=document.createElement('a');
-                link.href="http://localhost/sts/views/InterfazInicio.php";
+                //link.href="http://localhost/sts/views/modulos/inicio.php";
+                link.href="http://localhost/sts/views/modulos/inicio.php";
                 document.body.appendChild(link);
                 link.click();
                 link.remove();
@@ -62,23 +63,43 @@ class Login{
         document.cookie=localStorage.getItem("x-api-key");
         
         
-    }
+    }*/
 
 
 
     static main(){
         Login.init()
+        //alert("Holaaaroti")
+       
         $('#usuarioIngreso').on('input',function(e) {
+             e.preventDefault()
+            alert("click")
+           
             this.value = this.value.replace(/[0-9,*+\?^{}()|[\]\\]/g,"");
         });
-        $('#iniciarSesion').click(function(e){
-          
+        //$('#iniciarSesion').click(function(e){
+            $('#iniciarSesion').on('click',function(e) {
+           e.preventDefault();
+           alert("entroooooo")
+           console.log("entro al click")
            
-            e.preventDefault();
-            Login.validarUsuario();
+           // Login.validarUsuario();
 
         });
     }
 
 }
-Login.main();
+//Login.main();
+console.log("entro")
+$('#iniciarSesion').click(function(e){
+          
+    console.log("entro al clik")
+    e.preventDefault();
+    alert("hola js ")
+
+});
+let link=document.createElement('a');
+link.href="http://localhost/sts/views/modulos/inicio.php";
+                
+                link.click();
+                link.remove();
