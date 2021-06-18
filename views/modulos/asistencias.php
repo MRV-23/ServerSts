@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="content-wrapper validar">
     <!-- Main content -->
     <section class="content">
       <!-- Small boxes (Stat box) -->
@@ -20,6 +20,7 @@
               <div class="form-group">
                 <div class="row">
                   <div class="col-md-6">
+                  hola no cierto we
                     <label>Fecha inicial</label>
                     <i class="fa fa-check-circle text-green"></i>
                     <div class="input-group">

@@ -1,4 +1,4 @@
-<div class="content-wrapper" >
+<div class="content-wrapper validar" >
       <!-- Content Header (Page header) -->
       <!-- Main content -->
       <section class="content">

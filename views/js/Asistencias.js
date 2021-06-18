@@ -68,7 +68,7 @@ class Asistencias{
         if (m<10){
             m="0"+m; 
         } 
-        if(d>=1 || d<=9){
+        if(d>=1 && d<=9){
             d="0"+d;
         }
         var date =y+"-"+m+"-"+d; //var date =d + "-" + m + "-" + y;
@@ -82,10 +82,11 @@ class Asistencias{
     static main(){
         Asistencias.init()
         Asistencias.recursos()
+            console.log("entro a ahora aqui :)descargar yea")
     
         $("#reportePersonalAsistencias").click(function(e){
             e.preventDefault();
-            console.log("entro a descargar")
+            
             Asistencias.descargaArchivo(e)
         });
     }
