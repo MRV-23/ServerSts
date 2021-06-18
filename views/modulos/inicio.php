@@ -19,7 +19,7 @@
                 <div class="box-body col-md-12">
                   <div class="row">
                       <div class="col-md-12 "style='text-align: center;' >
-                          <img src="img/logosts.png" style="text-align: center;">
+                          <img src="views/img/logosts.png" style="text-align: center;">
                       </div>
                   </div>
                 </div>

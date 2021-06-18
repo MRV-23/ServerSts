@@ -57,7 +57,7 @@ class Asistencias{
     static recursos(){
         console.log("entro a recursos asistencias")
         let n,y,m,d;
-        //document.getElementById("nombre").innerHTML =localStorage.getItem("nombreUser");
+        document.getElementById("nombre").innerHTML =localStorage.getItem("nombreUser");
         $('#imagenuno').attr('src',localStorage.getItem("avatar"))
         $('#imagendos').attr('src',localStorage.getItem("avatar"))
        
@@ -72,7 +72,7 @@ class Asistencias{
             d="0"+d;
         }
         var date =y+"-"+m+"-"+d; //var date =d + "-" + m + "-" + y;
-        //console.log("date: "+date)
+        console.log("date: "+date)
         Asistencias.fin.val(date)
         Asistencias.inicio.val(date)
 

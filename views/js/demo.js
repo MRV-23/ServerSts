@@ -52,7 +52,7 @@ $(function () {
  
   });
   /**funcion para validar usuario */
-  $(".wrapper").click(function(e) {
+  /*$(".wrapper").click(function(e) {
  
     if (document.cookie == localStorage.getItem("x-api-key")){
 
@@ -66,7 +66,7 @@ $(function () {
     link.remove();
   }
       // Usuarios.validarUsuario();
-   });
+   });*/
 
 
 ///////

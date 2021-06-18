@@ -33,7 +33,7 @@ class Inicio{
            
             } else {
                 let link=document.createElement('a');
-                link.href="http://localhost/sts/pelon";
+                link.href="http://localhost/sts/inicio";
                 document.body.appendChild(link);
                 link.click();
                 link.remove();

@@ -25,10 +25,10 @@ class Login{
 
                  method:"POST",
                  body: JSON.stringify({
-                 //suario:Login.usuarioInicio.val(),
-                 //ass:Login.usuarioPassword.val()
-                 usuario:"jesus.rubio",
-                 pass:"pruebas123"
+                 usuario:Login.usuarioInicio.val(),
+                 pass:Login.usuarioPassword.val()
+                 //usuario:"jesus.rubio",
+                 //pass:"pruebas123"
              })
          })
          .then(response => response.json())
@@ -36,7 +36,7 @@ class Login{
             console.log("data: ")
              if (data.status =='success' && data.result.code == 200) {
                  let link=document.createElement('a');
-                 link.href="views/modulos/inicio.php";
+                 link.href="inicio";
                  document.body.appendChild(link);
                  link.click();
                  link.remove();
@@ -75,8 +75,6 @@ class Login{
              this.value = this.value.replace(/[0-9,*+\?^{}()|[\]\\]/g,"");
          });
          $('#iniciarSesion').click(function(e){
-           
-            
              e.preventDefault();
              Login.validarUsuario();
  

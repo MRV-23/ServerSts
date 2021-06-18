@@ -37,11 +37,10 @@
   <![endif]-->
 </head>
   <body class="hold-transition  sidebar-mini skin-red">
-  <div class="wrapper">
+  <div class="wrapper">   
     <?php
-      $respuesta="";
-      echo $respuesta;
-      if(isset($_GET['ruta'])&&$respuesta=="ok"){
+ 
+      if(isset($_GET['ruta'])){
         include "views/modulos/Encabezado.php";
         include "views/modulos/Menu.php";
         if($_GET['ruta']=="inicio"||

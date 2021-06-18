@@ -55,7 +55,9 @@
         <div id='alertainicio'></div>
        
          <input  class="botonSesion" id="iniciarSesion" name='iniciarSesion'type="button" value="INICIAR"><br>
-        <h1 class="lema"><i class="fa fa-map-marker"></i> <strong>SKY</strong>TRACKING</h1>
+         <h1 class="lema">STS</h1>
+        <h1 class="lema"><i class="fa fa-map-marker"></i>
+        <h1 class="lema"><strong>SKY</strong>TRACKING</h1>
         <h4 class="derechos"> S Y S T E M </h4>
         <p id="demo"></p>
            
