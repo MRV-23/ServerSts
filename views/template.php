@@ -35,16 +35,13 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-
-
-  <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
   <body class="hold-transition  sidebar-mini skin-red">
   <div class="wrapper">
     <?php
-      
-      if(isset($_GET['ruta'])){
+      $respuesta="";
+      echo $respuesta;
+      if(isset($_GET['ruta'])&&$respuesta=="ok"){
         include "views/modulos/Encabezado.php";
         include "views/modulos/Menu.php";
         if($_GET['ruta']=="inicio"||
@@ -58,6 +55,8 @@
             include "views/modulos/footer.php";
            }
       }else {
+        $respuesta="ok";
+        echo $respuesta;
         include "views/modulos/login.php";
       }
       
@@ -118,10 +117,24 @@
    <!--AdminLTE for demo purposes 
   <script src="views/js/Login.js"></script>-->
 <script src="views/js/demo.js"></script>
-<script src="views/js/Usuarios.js"></script>
-<script src="views/js/Inicio.js"></script>
+
+
 <script src="views/js/paginador.js"></script>
 <script src="views/js/Asistencias.js"></script>
+
+<!--
+
+-->
+
+<?php if($_GET['ruta']=="usuarios"):?>
+
+      <script src="views/js/Usuarios.js"></script>
+<script src="views/js/Inicio.js"></script>
+
+      <?php endif;?>
+
+
+            
   </body>
     
     

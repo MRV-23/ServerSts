@@ -66,9 +66,9 @@ class Usuarios{
     }
 
     static recursos(){
-        document.getElementById("nombre").innerHTML =localStorage.getItem("nombreUser");
+        /*document.getElementById("nombre").innerHTML =localStorage.getItem("nombreUser");
         $('#imagenuno').attr('src',localStorage.getItem("avatar"))
-        $('#imagendos').attr('src',localStorage.getItem("avatar"))
+        $('#imagendos').attr('src',localStorage.getItem("avatar"))*/
     }
 
     static main(){

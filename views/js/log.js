@@ -36,7 +36,7 @@ class Login{
             console.log("data: ")
              if (data.status =='success' && data.result.code == 200) {
                  let link=document.createElement('a');
-                 link.href="inicio";
+                 link.href="views/modulos/inicio.php";
                  document.body.appendChild(link);
                  link.click();
                  link.remove();

@@ -57,7 +57,7 @@ class Asistencias{
     static recursos(){
         console.log("entro a recursos asistencias")
         let n,y,m,d;
-        document.getElementById("nombre").innerHTML =localStorage.getItem("nombreUser");
+        //document.getElementById("nombre").innerHTML =localStorage.getItem("nombreUser");
         $('#imagenuno').attr('src',localStorage.getItem("avatar"))
         $('#imagendos').attr('src',localStorage.getItem("avatar"))
        
